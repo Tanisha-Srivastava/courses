@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy IT Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search IT Courses</h1>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchTitle" placeholder="Search by title or skills">
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <div class="filter-box price-slider">
+                <label for="priceRange" id="priceLabel">Max Price: ₹15,000</label>
+                <input type="range" id="priceRange" min="0" max="15000" step="500" value="15000">
+            </div>
+
+            <div class="filter-box">
+                <label>Minimum Rating:</label>
+                <div class="rating-buttons">
+                    <button data-rating="3">★★★☆☆</button>
+                    <button data-rating="4">★★★★☆</button>
+                    <button data-rating="4.5">★★★★★</button>
+                    <button id="clearRatings">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses -->
+        <div id="courses"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
