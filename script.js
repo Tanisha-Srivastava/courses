@@ -4,7 +4,7 @@ let debounceTimer;
 
 // Load Courses from JSON
 async function loadCourses() {
-    const response = await fetch('udemy_it_courses.json');
+    const response = await fetch('./data/udemy_it_courses.json');
     courses = await response.json();
     calculateTFIDF();
     displayCourses(courses);
